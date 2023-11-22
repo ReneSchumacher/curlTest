@@ -8,9 +8,13 @@ jobs:
         runs-on: windows-latest
         steps:
             - name: Show curl version
-              run: curl --version
+              run: |
+                curl --version
+                git -v
     linux:
         runs-on: ubuntu-latest
         steps:
             - name: Show curl version
-              run: curl --version
+              run: |
+                curl --version
+                git -v
