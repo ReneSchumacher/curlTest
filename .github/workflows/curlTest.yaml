@@ -1,0 +1,16 @@
+name: Curl Version Test
+
+on:
+    workflow_dispatch:
+
+jobs:
+    windows:
+        runs-on: windows-latest
+        steps:
+            - name: Show curl version
+              run: curl --version
+    linux:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Show curl version
+              run: curl --version
